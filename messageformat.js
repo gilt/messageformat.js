@@ -1563,17 +1563,10 @@ var
     ))(MessageFormat, methods);
   };
 
-  if (typeof define === 'function' && define.amd) {
-    define(function() {
-      return MessageFormat;
-    });
-  } else {
-
-    if (typeof module !== 'undefined' && module.exports) {
-      exports = module.exports = MessageFormat;
-    }
-
-    exports.MessageFormat = MessageFormat;
+  if (typeof module !== 'undefined' && module.exports) {
+    exports = module.exports = MessageFormat;
   }
+
+  exports.MessageFormat = MessageFormat;
 
 })(this);
